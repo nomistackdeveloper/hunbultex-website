@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HunbulTex | Premier B2B Textile Manufacturing</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="javaScript.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>HunbulTex <span>B2B</span></h1>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#catalog">Catalog</a>
+      <a href="#contact">Contact</a>
+      <a href="login.html" class="btn-nav">Buyer Portal</a>
+      <a href="signup.html" class="btn-nav btn-accent">Register</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-box">
+        <div class="trust-pills">
+          <span class="trust-pill">OEKO-TEX® Standard 100</span>
+          <span class="trust-pill">ISO 9001 Certified</span>
+          <span class="trust-pill">GOTS Organic</span>
+        </div>
+        <span class="eyebrow">Enterprise Textile Manufacturing</span>
+        <h2>Engineered Fabric Solutions for Global Brands</h2>
+        <p>30+ printing lines delivering 240M meters annually. Premium cotton, eco-polyester, and custom jacquard weaves exported across North America & Europe.</p>
+        <div class="hero-actions">
+          <a href="#catalog" class="btn btn-primary">Explore Fabric Catalog</a>
+          <a href="#contact" class="btn-outline">Request Instant Quote</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About & Stats Section -->
+    <section id="about" class="about">
+      <div class="section-header">
+        <span class="eyebrow">Why Choose HunbulTex</span>
+        <h2>30 Years of Precision Manufacturing</h2>
+        <p>Combining state-of-the-art European machinery with sustainable eco-friendly printing in Lahore, Pakistan.</p>
+      </div>
+      <div class="stats">
+        <div class="stat-card">
+          <h3 data-target="30">30+</h3>
+          <p>Years Experience</p>
+        </div>
+        <div class="stat-card">
+          <h3 data-target="100">100+</h3>
+          <p>Global Brand Partners</p>
+        </div>
+        <div class="stat-card">
+          <h3 data-target="240">240M</h3>
+          <p>Annual Capacity (Meters)</p>
+        </div>
+        <div class="stat-card">
+          <h3 data-target="30">30</h3>
+          <p>Digital Printing Lines</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Banner -->
+    <section id="certifications" class="cert-banner">
+      <div class="cert-grid">
+        <div class="cert-item">
+          <h4>OEKO-TEX®</h4>
+          <p>CONFIDENCE IN TEXTILES</p>
+        </div>
+        <div class="cert-item">
+          <h4>ISO 9001:2015</h4>
+          <p>QUALITY MANAGEMENT</p>
+        </div>
+        <div class="cert-item">
+          <h4>GOTS</h4>
+          <p>ORGANIC TEXTILE STANDARD</p>
+        </div>
+        <div class="cert-item">
+          <h4>SEDEX</h4>
+          <p>SMETA AUDITED FACILITY</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section id="catalog">
+      <div class="catalog-heading">
+        <div>
+          <span class="eyebrow">Live Stock & Custom Production</span>
+          <h2>Export-Ready Fabric Catalog</h2>
+        </div>
+        <p class="catalog-intro">Filter by fiber blend, weave structure, and finishing technique.</p>
+      </div>
+
+      <div class="filter-panel">
+        <div class="filter-group">
+          <label for="materialFilter">Composition</label>
+          <select id="materialFilter" data-filter="material">
+            <option value="all">All Compositions</option>
+            <option value="cotton">100% Organic Cotton</option>
+            <option value="polyester">Recycled Polyester</option>
+            <option value="viscose">Viscose Blend</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="weaveFilter">Weave Type</label>
+          <select id="weaveFilter" data-filter="weave">
+            <option value="all">All Weaves</option>
+            <option value="satin">Satin Weave</option>
+            <option value="twill">Twill Weave</option>
+            <option value="jacquard">Jacquard Structure</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="finishFilter">Finish Technique</label>
+          <select id="finishFilter" data-filter="finish">
+            <option value="all">All Finishes</option>
+            <option value="printed">Digital Pigment Print</option>
+            <option value="dyed">Reactive Piece Dyed</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="catalog-status">
+        <span id="resultCount">Showing 3 verified fabric series</span>
+        <button id="resetFilters">Reset Filters</button>
+      </div>
+
+      <div class="catalog">
+        <article class="card" data-material="cotton" data-weave="satin" data-finish="printed">
+          <div class="card-img-wrap">
+            <span class="stock-badge in-stock">Ready Stock</span>
+            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='260' viewBox='0 0 400 260'><defs><pattern id='p1' width='20' height='20' patternUnits='userSpaceOnUse'><path d='M0 10 L10 0 L20 10 L10 20 Z' fill='%230b4d4d'/></pattern></defs><rect width='100%' height='100%' fill='%230d5c5c'/><rect width='100%' height='100%' fill='url(%23p1)' opacity='0.3'/><text x='50%' y='45%' fill='%23e8b34b' font-family='sans-serif' font-weight='bold' font-size='20' text-anchor='middle'>Organic Cotton Satin</text><text x='50%' y='60%' fill='%23ffffff' font-family='sans-serif' font-size='13' text-anchor='middle'>140 GSM • Reactive Print</text></svg>" alt="Digital Printed Cotton">
+          </div>
+          <div class="card-content">
+            <h3>Digital Printed Organic Cotton</h3>
+            <p>High-density 100% GOTS Organic Cotton Satin base with ultra-sharp pigment printing.</p>
+            <div class="specs-mini">
+              <span><b>GSM:</b> 140</span>
+              <span><b>Width:</b> 58"</span>
+              <span><b>MOQ:</b> 1,000m</span>
+            </div>
+            <div class="product-tags">
+              <span>Cotton</span>
+              <span>Satin</span>
+              <span>Digital Print</span>
+            </div>
+            <div class="card-actions">
+              <a href="product.html" class="btn btn-sm">Full Techpack</a>
+              <button class="btn-outline btn-sm sample-btn">Request Sample</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-material="polyester" data-weave="twill" data-finish="dyed">
+          <div class="card-img-wrap">
+            <span class="stock-badge make-to-order">Make to Order</span>
+            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='260' viewBox='0 0 400 260'><defs><pattern id='p2' width='16' height='16' patternUnits='userSpaceOnUse'><path d='M0 0 L16 16 M16 0 L0 16' stroke='%23052a2d' stroke-width='2'/></pattern></defs><rect width='100%' height='100%' fill='%23083c40'/><rect width='100%' height='100%' fill='url(%23p2)' opacity='0.25'/><text x='50%' y='45%' fill='%23e8b34b' font-family='sans-serif' font-weight='bold' font-size='20' text-anchor='middle'>Recycled Polyester Twill</text><text x='50%' y='60%' fill='%23ffffff' font-family='sans-serif' font-size='13' text-anchor='middle'>220 GSM • Outerwear Grade</text></svg>" alt="Polyester Fabric">
+          </div>
+          <div class="card-content">
+            <h3>Heavy Recycled Polyester Twill</h3>
+            <p>Durable eco-friendly twill structure designed for industrial workwear and technical outerwear.</p>
+            <div class="specs-mini">
+              <span><b>GSM:</b> 220</span>
+              <span><b>Width:</b> 60"</span>
+              <span><b>MOQ:</b> 2,500m</span>
+            </div>
+            <div class="product-tags">
+              <span>rPET</span>
+              <span>Twill</span>
+              <span>Piece Dyed</span>
+            </div>
+            <div class="card-actions">
+              <a href="product.html" class="btn btn-sm">Full Techpack</a>
+              <button class="btn-outline btn-sm sample-btn">Request Sample</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-material="viscose" data-weave="jacquard" data-finish="dyed">
+          <div class="card-img-wrap">
+            <span class="stock-badge in-stock">Ready Stock</span>
+            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='260' viewBox='0 0 400 260'><defs><pattern id='p3' width='30' height='30' patternUnits='userSpaceOnUse'><circle cx='15' cy='15' r='10' fill='none' stroke='%23f9907b' stroke-width='1.5'/></pattern></defs><rect width='100%' height='100%' fill='%23ef765e'/><rect width='100%' height='100%' fill='url(%23p3)' opacity='0.3'/><text x='50%' y='45%' fill='%23ffffff' font-family='sans-serif' font-weight='bold' font-size='20' text-anchor='middle'>Luxe Viscose Jacquard</text><text x='50%' y='60%' fill='%23ffffff' font-family='sans-serif' font-size='13' text-anchor='middle'>160 GSM • Soft Luster</text></svg>" alt="Viscose Fabric">
+          </div>
+          <div class="card-content">
+            <h3>Luxe Viscose Jacquard Weave</h3>
+            <p>Intricate geometric pattern with silky hand-feel, engineered for premium fashion lines.</p>
+            <div class="specs-mini">
+              <span><b>GSM:</b> 160</span>
+              <span><b>Width:</b> 56"</span>
+              <span><b>MOQ:</b> 500m</span>
+            </div>
+            <div class="product-tags">
+              <span>Viscose</span>
+              <span>Jacquard</span>
+              <span>Custom Dyed</span>
+            </div>
+            <div class="card-actions">
+              <a href="product.html" class="btn btn-sm">Full Techpack</a>
+              <button class="btn-outline btn-sm sample-btn">Request Sample</button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div id="emptyCatalog" class="empty-catalog" hidden>
+        No fabric matches the selected parameters. Contact us for custom spinning & weaving.
+      </div>
+    </section>
+
+    <!-- RFQ Form Section -->
+    <section id="contact" class="rfq-section">
+      <div class="rfq-container">
+        <div class="rfq-info">
+          <span class="eyebrow">Direct Factory Quote</span>
+          <h2>Submit Your RFQ</h2>
+          <p>Get formal price quotations, lab-dip options, and lead time projections directly from our sales team within 24 hours.</p>
+          <ul class="rfq-benefits">
+            <li>✓ Custom Color Matching (Pantone TCX)</li>
+            <li>✓ Free Air-Express Swatch Samples</li>
+            <li>✓ Flexible LC / TT Payment Terms</li>
+          </ul>
+        </div>
+        <form id="rfqForm" class="rfq-card-form">
+          <div class="form-row">
+            <input type="text" placeholder="Company Name *" required>
+            <input type="email" placeholder="Business Email *" required>
+          </div>
+          <div class="form-row">
+            <input type="text" placeholder="Country / Market *" required>
+            <input type="tel" placeholder="Phone Number / WhatsApp">
+          </div>
+          <textarea rows="4" placeholder="Fabric specifications, required GSM, quantity (meters), target price..." required></textarea>
+          <button type="submit" class="btn btn-primary btn-block">Submit Official Inquiry</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Sample Request Modal -->
+  <div id="sampleModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h3>Request Free Swatch Sample</h3>
+      <p>We deliver swatch books worldwide via DHL express to verified buyers.</p>
+      <form id="sampleForm">
+        <input type="text" placeholder="Company Name *" required>
+        <input type="email" placeholder="Business Email *" required>
+        <input type="text" placeholder="Delivery Address *" required>
+        <button type="submit" class="btn btn-primary btn-block">Dispatch Swatch Kit</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <h3>HunbulTex Pvt Ltd</h3>
+        <p>22-KM Off Ferozepur Road, Rohi Nala, Lahore-54600, Pakistan</p>
+      </div>
+      <div>
+        <p>© 2026 HunbulTex Pvt Ltd. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
